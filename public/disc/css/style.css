@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+}
+body{
+    padding:0 !important;
+    margin:0 !important;
+    background: url('../img/Background-1.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color:#fff;
+    font-size:5em;
+}
+
+
+
+/* .tablet{
+    padding:1% 35%;
+}
+.tablet-left{
+    min-height:30vh;
+    border-radius: 50% 0 0 50%;
+    background: #ffffff90;
+    border-left:0.4em solid #fff;
+    border-right:0.2em solid #000;
+}
+.tablet-right{
+    min-height:30vh;
+    background: #ec37fc20;
+    border-left:0.2em solid #000;
+    border-right:0.4em solid #fff;
+    border-radius: 0 50% 50% 0;
+} */
+
+.my-card{
+    border-radius: 0.5em;
+    border:0.1em solid #ec37fc;
+    transition: all ease 0.5s;
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
+    background-image: url('../img/Background-card.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+.my-card h5{
+    text-transform: uppercase;
+}
+.my-card a{
+    color: #000;
+}
+
+.my-card:hover{
+    border-radius: 1em;
+    border:0.1em solid #3795fc;
+}
+.my-card a:hover{
+    color: #3795fc;
+}
+
+
+
+@media (max-width:909px){
+    h1{
+        color:#000;
+        font-size:2em;
+    }
+    .my-card{
+        min-height: 4vh;
+    }
+    .my-card h5{
+        font-size:0.6em;
+    }
+    .row{
+        padding:0em;
+    }
+}
